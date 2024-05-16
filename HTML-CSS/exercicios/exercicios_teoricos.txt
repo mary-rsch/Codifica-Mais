@@ -1,0 +1,40 @@
+1 O que são tags semânticas? Por que devemos utilizá-las? Dê exemplos de tags semânticas.
+
+São elementos que dizem aos navegadores e mecanismos de busca o que cada parte do conteúdo representa, elas disponibilizam facil acesso a navegação em páginas da web para pessoas com deficiência visual e o código fica mais claro e organizado. Exemplos: <h1>, <header>, <p>, <footer>...
+
+2 O que são elementos inline? Dê exemplos
+
+São elementos que representam partes específicas do texto dentro de um documento HTML. Eles são usados para aplicar estilos e formatação a essas partes do texto sem quebrar a linha, que significa que o texto continua em uma única linha. Exemplos: <b>, <i>, <u>, <a>...
+
+3 O que são elementos block level? Dê exemplos.
+
+São elementos que ocupam toda a largura disponível na página e iniciam uma nova linha antes e depois deles mesmos, são usados para estruturar o conteúdo da página e criar seções distintas. Exemplos: <main>, <nav>, <ul>, <ol>, <div>...
+
+4 Descreva a utilização do atributo ‘alt’ em imagens no HTML e por que é importante utilizar esse atributo.
+
+Esse atributo é importante para a acessibilidade, ele fornece uma descrição textual da imagem para garantir que todos os usuários, incluindo aqueles com deficiência visual, possam acessar e entender o conteúdo da página.
+
+5 Explique o conceito de herança em CSS. Dê exemplo utilizando a propriedade ‘color’.
+
+Esse conceito permite que os estilos definidos para um elemento 'pai' sejam automaticamente herdados por seus elementos 'filhos'. Que significa que você pode definir um estilo uma vez para um elemento pai e ele será aplicado a todos os seus descendentes. Exemplo: 
+
+.container {
+  color: blue;
+}
+
+No caso, a cor azul será definida para .container para todos os elementos 'filhos' nela.
+
+6 Explique o que é BEM (Block Element Modifier)
+
+BEM ajuda a organizar e estruturar o código CSS, tornando-o mais fácil de ler, manter e reutilizar.
+
+7 Explique e dê exemplos a diferença entre medidas absolutas e relativas
+
+As absolutas representam valores fixos e predefinidos, como centimetros (cm), polegadas (in), pixels (px) ou pontos (pt). As relativas baseiam-se em valores proporcionais a outros elementos ou a viewport (area de visualização da pagina), como porcentagens (%), unidades relativas à viewport (vw, vh), unidades relativas ao tamanho da fonte (em, rem).
+
+8 Explique o que é a unidade de medida Vw (viewport width) e Vh (viewport height) e a diferença entre elas.
+
+Essas unidades representam porcentagens da largura e altura da viewport, permitindo a criação de layouts flexiveis e responsivos que se adaptam a diferentes tamanhos de tela. 
+
+Vw tem base na largura da viewport do navegador.
+Vh tem base na altura da viewport do navegador.
