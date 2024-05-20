@@ -1,14 +1,17 @@
 <?php
 
-$nome = "Mary";
-$idade = 16;
-$pi = 3.14159;
+// Exercício 1 da lista de lógica de programação
 
-echo "Nome: $nome\n";
-echo "Idade: $idade anos\n";
-echo "Valor de pi: $pi\n";
+$numero1;
+$numero2;
+$resultadoDaSoma;
 
+echo "Digite um primeiro número: ";
+$numero1 = fgets(STDIN);
 
-$idade++;
-echo "Nova idade: $idade anos\n";
+echo "Digite um segundo número: ";
+$numero2 = fgets(STDIN);
 
+$resultadoDaSoma = $numero1 + $numero2;
+
+echo "A soma dos números é: ", $resultadoDaSoma;
