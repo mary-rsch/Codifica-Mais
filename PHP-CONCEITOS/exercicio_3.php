@@ -14,7 +14,6 @@ if ($idadeDoUsuario>= "18"){
 
 /* Código alternativo:
 <?php
-$idadeDoUsuario;
 
 echo"Digite sua idade: " . PHP_EOL;
 $idadeDoUsuario=fgets(STDIN);
