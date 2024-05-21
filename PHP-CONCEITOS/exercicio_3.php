@@ -2,7 +2,6 @@
 
 // Exercício 3 da lista de lógica de programação
 
-$idadeDoUsuario;
 
 echo"Digite sua idade: " . PHP_EOL;
 $idadeDoUsuario=fgets(STDIN);

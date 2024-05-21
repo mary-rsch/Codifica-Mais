@@ -2,10 +2,6 @@
 
 // Exercício 1 da lista de lógica de programação
 
-$numero1;
-$numero2;
-$resultadoDaSoma;
-
 echo "Digite um primeiro número: " . PHP_EOL;
 $numero1 = fgets(STDIN);
 
