@@ -2,11 +2,6 @@
 
 // Exercício 2 da lista de lógica de programação
 
-$nota1; 
-$nota2; 
-$nota3; 
-$mediaDasNotas;
-
 echo"Digite sua primeira nota: " . PHP_EOL;
 $nota1 = fgets(STDIN);
 
