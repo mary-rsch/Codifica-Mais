@@ -25,3 +25,4 @@ for ($numero = $a; $numero <= $b; $numero++) {
 }
 
 echo "A soma dos números ímpares no intervalo [$a, $b] é: $soma";
+

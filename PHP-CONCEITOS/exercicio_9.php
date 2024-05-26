@@ -19,3 +19,4 @@ if ($numero <= 1 || !$numeroPrimo) {
 } else {
     echo "O número é primo.";
 }
+

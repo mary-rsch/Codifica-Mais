@@ -26,3 +26,4 @@ if ($maiorNumero !== null && $menorNumero !== null) {
     echo "O maior número digitado foi: $maiorNumero\n";
     echo "O menor número digitado foi: $menorNumero\n";
 }
+
