@@ -14,15 +14,12 @@ function converterTemperatura($valor, $unidadeAtual, $unidadeDesejada) {
 }
 
 echo "Digite a temperatura: ";
-$valor = fgets(STDIN);
-$valor = trim($valor);
+$valor = readline();
 
 echo "Digite a unidade atual (C ou F): ";
-$unidadeAtual = fgets(STDIN);
-$unidadeAtual = trim(strtoupper($unidadeAtual));
+$unidadeAtual = readline();
 
 echo "Digite a unidade desejada (C ou F): ";
-$unidadeDesejada = fgets(STDIN);
-$unidadeDesejada = trim(strtoupper($unidadeDesejada));
+$unidadeDesejada = readline();
 
 converterTemperatura($valor, $unidadeAtual, $unidadeDesejada);
