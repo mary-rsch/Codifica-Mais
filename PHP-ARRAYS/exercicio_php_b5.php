@@ -8,11 +8,8 @@ $valorFinal = $valor - $valorDesconto;
 return $valorFinal;
 }
 
-echo"Digite o valor do produto: R$ ";
-$valor = readline();
-
-echo"Digite o valor do desconto (sem a utilização de %): ";
-$desconto = readline();
+$valor = readline("Digite o valor do produto: R$ ");
+$desconto = readline("Digite o valor do desconto (sem a utilização de %): ");
 
 $valorFinal = calcularDesconto($valor, $desconto);
 echo "O valor final com desconto é: R$ " . number_format($valorFinal, 2, ',', '.');
