@@ -14,6 +14,30 @@ function adicionarProduto(&$estoque, $codigo, $nome, $tamanho, $cor, $quantidade
 
 function venderProduto(&$estoque, $codigo, $quantidade)
 {
+
+    if (!isset($estoque[$codigo])) {
+        echo "Código do produto não encontrado" . PHP_EOL;
+        return;
+    }
+
+    if ($quantidade > $estoque[$codigo]['quantidade']) {
+        echo "Quantidade insuficiente no estoque." . PHP_EOL;
+        return;
+    }
+
+    $estoque[$codigo]['quantidade'] -= $quantidade;
+
+if ($estoque[$codigo]['quantidade'] == 0) {
+        unset($estoque[$codigo]);
+        echo "Produto vendido, estoque esgotado e removido do sistema." . PHP_EOL;
+    } else {
+        echo "Quantidade de estoque atualizada, produto vendido." . PHP_EOL;
+    }
+    
+}
+
+function venderProduto(&$estoque, $codigo, $quantidade)
+{
     if ($quantidade > $estoque[$codigo]['quantidade']) {
         echo "Quantidade insuficiente no estoque." . PHP_EOL;
         return;
