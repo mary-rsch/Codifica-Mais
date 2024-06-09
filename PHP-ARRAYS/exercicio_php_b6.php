@@ -10,25 +10,27 @@ function classificacaoIMC($imc)
 {
     if ($imc < 18.5) {
         return "Magreza";
-    } elseif ($imc <= 18.5 && $imc >= 24.9) {
+    } 
+    if ($imc <= 18.5 && $imc >= 24.9) {
         return "Normal";
-    } elseif ($imc >= 25 &&  $imc <= 29.9) {
+    } 
+    if ($imc >= 25 &&  $imc <= 29.9) {
         return "Sobrepeso";
-    } elseif ($imc >= 30 && $imc <= 34.9) {
+    } 
+    if ($imc >= 30 && $imc <= 34.9) {
         return "Obesidade grau I";
-    } elseif ($imc >= 35 && $imc <= 39.9) {
+    } 
+    if ($imc >= 35 && $imc <= 39.9) {
         return "Obesidade grau II";
-    } elseif ($imc >= 40) {
+    } 
+    if ($imc >= 40) {
         return "Obesidade grau III";
     }
     
 }
 
-echo"Digite sua altura: ";
-$altura = readline();
-
-echo "Digite seu peso: ";
-$peso = readline();
+$altura = readline("Digite sua altura: ");
+$peso = readline("Digite seu peso: ");
 
 $imc = calcularIMC($peso, $altura);
 $classificacao = classificacaoIMC($imc);
