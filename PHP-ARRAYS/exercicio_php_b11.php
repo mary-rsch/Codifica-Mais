@@ -36,17 +36,6 @@ if ($estoque[$codigo]['quantidade'] == 0) {
     
 }
 
-function venderProduto(&$estoque, $codigo, $quantidade)
-{
-    if ($quantidade > $estoque[$codigo]['quantidade']) {
-        echo "Quantidade insuficiente no estoque." . PHP_EOL;
-        return;
-    }
-    $estoque[$codigo]['quantidade'] -= $quantidade;
-    
-    echo "Quantidade de estoque atualizada, produto vendido.";
-}
-
 function verificarEstoque(&$estoque, $codigo)
 {
     if (!isset($estoque[$codigo])) {
