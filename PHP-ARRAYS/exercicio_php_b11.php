@@ -4,7 +4,8 @@ $estoque = [];
 
 function adicionarProduto(&$estoque, $codigo, $nome, $tamanho, $cor, $quantidade)
 {
-    $estoque[$codigo] = [
+    $estoque[] = [
+        'codigo' => $codigo,
         'nome' => $nome,
         'tamanho'=> $tamanho,
         'cor'=> $cor,
@@ -51,8 +52,9 @@ function listarEstoque(&$estoque)
         echo"Estoque vazio.". PHP_EOL;
         return;
     }
-    foreach ($estoque as $codigo => $produto) {
-        echo "Código: $codigo 
+    foreach ($estoque as $key => $produto) {
+        echo "Key: $key
+        | Código: {$produto['codigo']}
         | Nome: {$produto['nome']} 
         | Tamanho: {$produto['tamanho']} 
         | Cor: {$produto['cor']} 
