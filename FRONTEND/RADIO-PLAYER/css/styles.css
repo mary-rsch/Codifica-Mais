@@ -13,7 +13,6 @@ body{
 .master{
     display: flex;
     width: 24rem;
-    height: 14rem;
     border-radius: 12px;
     padding: 0.5rem;
     flex-direction: column;
