@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Reem+Kufi+Fun:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    height: 100vh;
+    background-color: #1e3130;
+}
+
+.master{
+    display: flex;
+    width: 24rem;
+    border-radius: 12px;
+    padding: 0.5rem;
+    flex-direction: column;
+    gap: 0.3rem;
+    background-color: white;
+}
+
+.conteudo-radio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.capa-radio img{
+    height: 100%;
+    flex: 0;
+    padding: 0.1rem;
+    border-radius: 1.5rem;
+}
+
+
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+    padding: 1rem;
+}
+
+.timer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.7rem;
+}
+
+.btns-area{
+    padding: 0.5rem;
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    gap: 2.8rem;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(191, 191, 191);
+    border-radius: 0.5rem;
+}
+
+.escutado{
+    flex: 0.6;
+    background-color: #56ffc7;
+    border-radius: 0.5rem;
+    height: 0.7rem;
+}
+
+.episodio-radio{
+    color: #60b89b;
+    
+}
+
+.descricao-radio{
+    color: grey;
+}
