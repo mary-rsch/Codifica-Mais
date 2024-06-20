@@ -58,7 +58,7 @@ body{
 .btns{
     display: flex;
     flex-direction: row;
-    gap: 2.8rem;
+    justify-content: space-around;
 }
 
 .barra{
