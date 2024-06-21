@@ -83,3 +83,11 @@ body{
 .descricao-radio{
     color: grey;
 }
+
+.temporalizador{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    gap: 0.2rem;
+}
