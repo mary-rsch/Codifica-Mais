@@ -12,3 +12,7 @@ values
 ('Produto 8', 'SKU008', 'Descrição do Produto 8', 'Categoria 8', 80.00, 'Unidade 8', 8.00, 800, 'Fabricante 8', 'Fornecedor 8'),
 ('Produto 9', 'SKU009', 'Descrição do Produto 9', 'Categoria 9', 90.00, 'Unidade 9', 9.00, 900, 'Fabricante 9', 'Fornecedor 9'),
 ('Produto 10', 'SKU010', 'Descrição do Produto 10', 'Categoria 10', 100.00, 'Unidade 10', 10.00, 1000, 'Fabricante 10', 'Fornecedor 10');
+
+insert into categorias (nome_categoria)
+values
+('Comida');
