@@ -4,7 +4,6 @@ use gestao_produtos;
 
 create table produtos (
     id INT AUTO_INCREMENT primary key,
-<<<<<<< HEAD
     nome VARCHAR(150) not null,
     sku VARCHAR(50) unique not null,
     descricao TEXT,
@@ -24,27 +23,16 @@ create table produtos (
     foreign key(fornecedor) references fornecedores(id)
 );
 
+
+
 create table categorias (
     id INT AUTO_INCREMENT primary key,
     nome_categoria VARCHAR(150) not null,
-=======
-    nome VARCHAR(255) not null,
-    sku VARCHAR(50) unique not null,
-    descricao TEXT,
-    categoria VARCHAR(255),
-    preco DECIMAL(10, 2),
-    unidade_medida VARCHAR(50),
-    peso DECIMAL(10, 2),
-    quantidade_estoque INT default 0,
-    fabricante VARCHAR(255),
-    fornecedor VARCHAR(255),
->>>>>>> d5a7fb95b58255045442128412f301e8115ddcc0
     deleted_at TIMESTAMP null default null,
     created_at TIMESTAMP default CURRENT_TIMESTAMP,
     updated_at TIMESTAMP default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP
 );
 
-<<<<<<< HEAD
 create table unidades_medida (
     id INT AUTO_INCREMENT primary key,
     nome_unidades_medida VARCHAR(50) not null,
@@ -75,6 +63,4 @@ select * from categorias;
 select * from unidades_medida;
 select * from fabricantes;
 select * from fornecedores;
-=======
 select * from produtos;
->>>>>>> d5a7fb95b58255045442128412f301e8115ddcc0
