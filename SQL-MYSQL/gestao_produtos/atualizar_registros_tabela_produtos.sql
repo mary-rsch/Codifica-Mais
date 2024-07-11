@@ -11,11 +11,3 @@ where id = 2;
 update produtos
 set preco = 45.00, quantidade_estoque = 60
 where id = 8;
-
-update produtos
-set id = 15
-where id = 21;
-
-update produtos
-set id = 10
-where id = 15;
