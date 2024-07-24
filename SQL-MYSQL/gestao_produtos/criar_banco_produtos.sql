@@ -60,4 +60,34 @@ create table produtos (
     FOREIGN KEY (fornecedores_id) REFERENCES fornecedores(id)
 );
 
+create table unidades_medida (
+    id INT AUTO_INCREMENT primary key,
+    nome_unidades_medida VARCHAR(50) not null,
+    deleted_at TIMESTAMP null default null,
+    created_at TIMESTAMP default CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP
+);
+
+create table fabricantes (
+    id INT AUTO_INCREMENT primary key,
+    nome_fabricantes VARCHAR(100) not null,
+    deleted_at TIMESTAMP null default null,
+    created_at TIMESTAMP default CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP
+);
+
+create table fornecedores (
+    id INT AUTO_INCREMENT primary key,
+    nome_fornecedores VARCHAR(100) not null,
+    deleted_at TIMESTAMP null default null,
+    created_at TIMESTAMP default CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP
+);
+
+
+select * from produtos;
+select * from categorias;
+select * from unidades_medida;
+select * from fabricantes;
+select * from fornecedores;
 select * from produtos;

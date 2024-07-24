@@ -1,6 +1,7 @@
 use gestao_produtos;
 
 
+<<<<<<< HEAD
 
 INSERT INTO fornecedores (nome_fornecedor) VALUES 
 ('Fornecedor 1'), ('Fornecedor 2'), ('Fornecedor 3'), ('Fornecedor 4'), ('Fornecedor 5'),
@@ -30,3 +31,8 @@ values
 ('Produto 8', 'SKU008', 'Descrição do Produto 8', 8, 80.00, 8, 8.00, 800, 8, 8),
 ('Produto 9', 'SKU009', 'Descrição do Produto 9', 9, 90.00, 9, 9.00, 900, 9, 9),
 ('Produto 10', 'SKU010', 'Descrição do Produto 10', 10, 100.00, 10, 10.00, 1000, 10, 10);
+=======
+insert into categorias (nome_categoria)
+values
+('Comida');
+>>>>>>> 79b300ab6fa609069a020932343cf586bec533ab
