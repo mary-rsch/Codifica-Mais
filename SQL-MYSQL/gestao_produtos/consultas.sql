@@ -21,5 +21,5 @@ WHERE c.nome_categoria = 'Categoria 2' AND u.nome_unidade_medida = 'Unidade 2';
 SELECT f.nome_fornecedor, COUNT(p.id) AS total_produtos, SUM(p.quantidade_estoque) AS total_estoque
 FROM produtos p
 JOIN fornecedores f ON p.fornecedores_id = f.id
-WHERE f.nome_fornecedor = 'Fornecedor 9'
+WHERE f.nome_fornecedor = 'Fornecedor 3'
 GROUP BY f.nome_fornecedor;
