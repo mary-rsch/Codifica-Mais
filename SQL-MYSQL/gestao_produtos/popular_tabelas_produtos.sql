@@ -1,23 +1,18 @@
 use gestao_produtos;
 
 
-<<<<<<< HEAD
 
 INSERT INTO fornecedores (nome_fornecedor) VALUES 
-('Fornecedor 1'), ('Fornecedor 2'), ('Fornecedor 3'), ('Fornecedor 4'), ('Fornecedor 5'),
-('Fornecedor 6'), ('Fornecedor 7'), ('Fornecedor 8'), ('Fornecedor 9'), ('Fornecedor 10');
+('Fornecedor 1'), ('Fornecedor 2'), ('Fornecedor 3'), ('Fornecedor 4'), ('Fornecedor 5');
 
 INSERT INTO categorias (nome_categoria) VALUES 
-('Categoria 1'), ('Categoria 2'), ('Categoria 3'), ('Categoria 4'), ('Categoria 5'),
-('Categoria 6'), ('Categoria 7'), ('Categoria 8'), ('Categoria 9'), ('Categoria 10');
+('Categoria 1'), ('Categoria 2'), ('Categoria 3'), ('Categoria 4'), ('Categoria 5');
 
 INSERT INTO unidades_medida (nome_unidade_medida) VALUES 
-('Unidade 1'), ('Unidade 2'), ('Unidade 3'), ('Unidade 4'), ('Unidade 5'),
-('Unidade 6'), ('Unidade 7'), ('Unidade 8'), ('Unidade 9'), ('Unidade 10');
+('Unidade 1'), ('Unidade 2'), ('Unidade 3'), ('Unidade 4'), ('Unidade 5');
 
 INSERT INTO fabricantes (nome_fabricante) VALUES 
-('Fabricante 1'), ('Fabricante 2'), ('Fabricante 3'), ('Fabricante 4'), ('Fabricante 5'),
-('Fabricante 6'), ('Fabricante 7'), ('Fabricante 8'), ('Fabricante 9'), ('Fabricante 10');
+('Fabricante 1'), ('Fabricante 2'), ('Fabricante 3'), ('Fabricante 4'), ('Fabricante 5');
 
 insert into produtos (nome, sku, descricao, categorias_id, preco, unidades_medida_id, peso, quantidade_estoque, fabricantes_id, fornecedores_id)
 values
@@ -31,8 +26,3 @@ values
 ('Produto 8', 'SKU008', 'Descrição do Produto 8', 8, 80.00, 8, 8.00, 800, 8, 8),
 ('Produto 9', 'SKU009', 'Descrição do Produto 9', 9, 90.00, 9, 9.00, 900, 9, 9),
 ('Produto 10', 'SKU010', 'Descrição do Produto 10', 10, 100.00, 10, 10.00, 1000, 10, 10);
-=======
-insert into categorias (nome_categoria)
-values
-('Comida');
->>>>>>> 79b300ab6fa609069a020932343cf586bec533ab

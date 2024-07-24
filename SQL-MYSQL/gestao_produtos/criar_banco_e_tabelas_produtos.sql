@@ -4,42 +4,42 @@ use gestao_produtos;
 
 
 -- Criação da tabela categorias
-CREATE TABLE categorias (
+CREATE TABLE if not exists categorias (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome_categoria VARCHAR(150) NOT NULL,
-    deleted_at TIMESTAMP NULL DEFAULT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+    deleted_at TIMESTAMP NULL DEFAULT NULL,
 );
 
 -- Criação da tabela unidades_medida
-CREATE TABLE unidades_medida (
+CREATE TABLE if not exists unidades_medida (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome_unidade_medida VARCHAR(50) NOT NULL,
-    deleted_at TIMESTAMP NULL DEFAULT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+    deleted_at TIMESTAMP NULL DEFAULT NULL,
 );
 
 -- Criação da tabela fabricantes
-CREATE TABLE fabricantes (
+CREATE TABLE if not exists fabricantes (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome_fabricante VARCHAR(100) NOT NULL,
-    deleted_at TIMESTAMP NULL DEFAULT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP]
+    deleted_at TIMESTAMP NULL DEFAULT NULL,
 );
 
--- Criação da tabela fornecedores
-CREATE TABLE fornecedores (
+
+CREATE TABLE if not exists fornecedores (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome_fornecedor VARCHAR(100) NOT NULL,
-    deleted_at TIMESTAMP NULL DEFAULT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+    deleted_at TIMESTAMP NULL DEFAULT NULL,
 );
 
-create table produtos (
+create table if not exists produtos (
     id INT AUTO_INCREMENT primary key,
     nome VARCHAR(150) NOT NULL,
     sku VARCHAR(50) unique not null,
@@ -58,30 +58,6 @@ create table produtos (
     FOREIGN KEY (unidades_medida_id) REFERENCES unidades_medida(id),
     FOREIGN KEY (fabricantes_id) REFERENCES fabricantes(id),
     FOREIGN KEY (fornecedores_id) REFERENCES fornecedores(id)
-);
-
-create table unidades_medida (
-    id INT AUTO_INCREMENT primary key,
-    nome_unidades_medida VARCHAR(50) not null,
-    deleted_at TIMESTAMP null default null,
-    created_at TIMESTAMP default CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP
-);
-
-create table fabricantes (
-    id INT AUTO_INCREMENT primary key,
-    nome_fabricantes VARCHAR(100) not null,
-    deleted_at TIMESTAMP null default null,
-    created_at TIMESTAMP default CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP
-);
-
-create table fornecedores (
-    id INT AUTO_INCREMENT primary key,
-    nome_fornecedores VARCHAR(100) not null,
-    deleted_at TIMESTAMP null default null,
-    created_at TIMESTAMP default CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP
 );
 
 
