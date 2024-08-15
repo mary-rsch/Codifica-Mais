@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #280d5a;
+    padding: 1.25rem;
+}
+
+.container {
+    background-color: #5a3f91;
+    border: 0.063rem solid #22002d;
+    border-radius: 0.313rem;
+    margin-bottom: 0.625rem;
+    width: 30rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+#navegacao {
+    display: flex;
+    justify-content: space-between;
+    gap: 8rem;
+}
+
+.novo-item {
+    width: 100%;
+    padding: 0.625rem;
+    background-color: #eaff01;
+    border: 0.063rem solid #b0c4de;
+    border-radius: 0.313rem;
+    margin-bottom: 0.625rem;
+    cursor: pointer;
+    padding: auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.buscar-item {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1.25rem;
+    border: 0.063rem solid #ccc;
+    border-radius: 0.313rem;
+    padding: auto;
+}
+
+.item {
+    background-color: #5259be;
+    padding: 0.938rem;
+    margin-bottom: 0.938rem;
+    border: 0.063rem solid #cf0000;
+    border-radius: 5px;
+    position: relative;
+}
+
+.item-id {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.tag {
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: #fff;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.vestuario {
+    background-color: #f5b83e;
+}
+
+.eletronico {
+    background-color: #d1c4e9;
+}
+
+.escritorio {
+    background-color: #c8e6c9;
+}
+
+.item-name {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sku, .quantidade {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.editar, .deletar {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+}
+
+.editar {
+    left: 10px;
+    background-color: #c0c0c0;
+}
+
+.deletar {
+    right: 10px;
+    background-color: #f6c1c1;
+    color: #d9534f;
+}
+
+.identificacao{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.espacamento-identificacao {
+    display: flex;
+    justify-content: space-evenly;
+}
