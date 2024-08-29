@@ -3,7 +3,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #FDFFFC;
+    background-color: #212529;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,8 +12,8 @@ body {
 }
 
 .container {
-    background-color: #f5f5f5;
-    border: 0.020rem solid #ffffff;
+    background-color: #343A40;
+    border: 0.020rem solid #454b52;
     border-radius: 2rem;
     width: 30rem;
     padding: 1rem;
@@ -22,53 +22,55 @@ body {
 .navegacao {
     display: flex;
     justify-content: space-between;
+    gap: 0.5rem;
 }
 
 .buscar-item {
     background-color: #fff;
-    border-radius: 30px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 1.875rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    max-width: 450px;
+    max-width: 28.125rem;
     border: none;
     outline: none;
     flex: 1;
-    padding: 10px;
-    font-size: 24px;
+    padding: 0.825rem;
+    font-size: 1.5rem;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
 }
 
 .botao-pesquisa {
-    background-color: #004FFF;
+    background-color: #CED4DA;
     border: none;
-    color: white;
+    color: black;
     border-radius: 100%;
-    width: 3rem;
+    width: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
 }
 
 .botao-pesquisa:hover {
-    background-color: #31AFD4;
+    background-color: #6C757D;
 }
 
 .novo-item {
-    background-color: #23e019;
-    border: 0.2rem solid #ffffff;
+    align-content: center;
+    background-color: #CED4DA;
+    border: 0.2rem solid #495057;
     border-radius: 1.2rem;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     padding: 0.600rem;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
 }
 
 .novo-item:hover {
-    background-color: #bbff72;
+    background-color: #F8F9FA;
 }
 
 a {
@@ -78,10 +80,10 @@ a {
 
 
 .item {
-    background-color: #E8EBF7;
+    background-color: #ffffff;
     padding: 1rem;
-    border: 1px solid #ACBED8;
-    border-radius: 20px;
+    border: 0.063rem solid #6C757D;
+    border-radius: 1.25rem;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -104,43 +106,40 @@ a {
 }
 
 .tag {
-    font-size: 20px;
-    padding: 2px 6px;
-    border-radius: 3px;
+    font-size: 1rem;
+    padding: 0.125rem 0.375rem;
+    border-radius: 0.188rem;
     color: #fff;
-    margin-right: 250px;
+    margin-right: 10.300rem;
+    margin-left: 0.3rem;
 }
 
 .vestuario {
-    background-color: #f5b83e;
+    background-color: #FF9E00;
 }
 
 .eletronico {
-    background-color: #6b509c;
+    background-color: #5A189A;
 }
 
 .escritorio {
-    background-color: #74cd77;
-}
-
-
-.sku, .quantidade {
-    margin-bottom: 5px;
+    background-color: #9BE564;
 }
 
 .editar, .deletar {
-    padding: 5px 10px;
+    padding: 0.313rem 0.625rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.313rem;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
+    transition: background-color 0.5s ease;
 }
 
 .editar {
-    left: 10px;
-    background-color: #81d3ff;
-    color: #009dff;
+    left: 0.625rem;
+    background-color: #003049;
+    color: #ffffff;
 }
 
 .editar:hover {
@@ -149,21 +148,21 @@ a {
 }
 
 .deletar {
-    right: 10px;
-    background-color: #fcaaaa;
-    color: #ff0000;
+    right: 0.625rem;
+    background-color: #C1121F;
+    color: #ffffff;
 }
 
 .deletar:hover {
     color: #ffb9b7;
-    background-color: #ca0909;
+    background-color: #fb6a6a;
 }
 
 .identificacao {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
 }
 
 .informacoes-item {
