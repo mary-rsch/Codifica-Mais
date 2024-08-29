@@ -17,7 +17,7 @@ session_start();
 <div class="container">
 
         <div class="navegacao">
-            <button class="novo-item">Novo Item</button>
+            <a href="/formulario.php" class="novo-item">Novo Item</a>
             <input type="text" placeholder="Buscar item" class="buscar-item">
             <button class="botao-pesquisa">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -29,7 +29,7 @@ session_start();
                 <div class="identificacao">
                     <span class="item-id">#000001</span>
                     <span class="tag vestuario">VESTUÁRIO</span>
-                    <span class="sku">SKU: 123456</span>
+                    <span class="sku">SKU:123456</span>
                 </div>
 
                 <div class="informacoes-item">
@@ -38,8 +38,8 @@ session_start();
                 </div>
 
                 <div class="modificar-item">
-                    <button class="editar">Editar</button>
-                    <button class="deletar">Deletar</button>
+                    <button class="editar">EDITAR</button>
+                    <button class="deletar">DELETAR</button>
                 </div>
             </div>
 
@@ -47,7 +47,7 @@ session_start();
                 <div class="identificacao">
                     <span class="item-id">#000002</span>
                     <span class="tag eletronico">ELETRÔNICO</span>
-                    <span class="sku">SKU: 123456</span>
+                    <span class="sku">SKU:123456</span>
                 </div>
 
                 <div class="informacoes-item">
@@ -56,8 +56,8 @@ session_start();
                 </div>
 
                 <div class="modificar-item">
-                    <button class="editar">Editar</button>
-                    <button class="deletar">Deletar</button>
+                    <button class="editar">EDITAR</button>
+                    <button class="deletar">DELETAR</button>
                 </div>
             </div>
 
@@ -65,7 +65,7 @@ session_start();
                 <div class="identificacao">
                     <span class="item-id">#000003</span>
                     <span class="tag escritorio">ESCRITÓRIO</span>
-                    <span class="sku">SKU: 123456</span>
+                    <span class="sku">SKU:123456</span>
                 </div>
 
                 <div class="informacoes-item">
@@ -74,8 +74,8 @@ session_start();
                 </div>
 
                 <div class="modificar-item">
-                    <button class="editar">Editar</button>
-                    <button class="deletar">Deletar</button>
+                    <button class="editar">EDITAR</button>
+                    <button class="deletar">DELETAR</button>
                 </div>
             </div>
         </div>
